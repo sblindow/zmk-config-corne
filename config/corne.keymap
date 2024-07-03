@@ -14,19 +14,25 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            // -----------------------------------------------------------------------------------------
+            // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Z  |  U  |  I  |  O  |  P  |   Ü  |
+            // | TAB  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  Ö  |   Ä  |
+            // | SHFT |  Y  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  -  | SHFT |
+            //                    | CMD | CTRL|(1)ENT| |(2)SPC| ALT |  3  |
+
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Z      &kp U  &kp I      &kp O    &kp P     &kp LBKT
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Y  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 1 ENTER    &lt 2 SPACE  &mo 2  &kp RALT
+&kp ESC    &kp DE_Q  &kp DE_W  &kp DE_E     &kp DE_R  &kp DE_T        &kp DE_Z      &kp DE_U  &kp DE_I      &kp DE_O    &kp DE_P     &kp DE_UDIA
+&kp TAB  &kp DE_A  &kp DE_S  &kp DE_D     &kp DE_F  &kp DE_G        &kp DE_H      &kp DE_J  &kp DE_K      &kp DE_L    &kp DE_ODIA  &kp DE_ADIA
+&kp LSHFT  &kp DE_Y  &kp DE_X  &kp DE_C     &kp DE_V  &kp DE_B        &kp DE_N      &kp DE_M  &kp DE_COMM   &kp DE_DOT  &kp DE_MINS  &kp RSHFT
+                         &kp LGUI  &kp LCTRL   &lt 1 ENTER    &lt 2 SPACE  &kp RALT  &mo 3
             >;
         };
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            // | ESC  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |   ß  |
+            // | TAB  | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     | SHFT |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
