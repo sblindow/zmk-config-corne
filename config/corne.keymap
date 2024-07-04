@@ -57,10 +57,10 @@
             */
 
             bindings = <
-&kp ESCAPE      &kp DE_EXCL  &kp DE_DQT  &kp DE_SECT  &kp DE_DOLLAR  &kp DE_PERCENT    &kp DE_AMPS  &kp DE_FSLH    &kp DE_LPAR   &kp DE_RPAR  &kp DE_EQUAL  &kp DE_QMARK
-&kp TAB         &kp DE_N1    &kp DE_N2   &kp DE_N3    &kp DE_N4      &kp DE_N5         &kp DE_N6    &kp DE_N7      &kp NUMBER_8  &kp DE_N9    &kp DE_N0     &kp DE_SHARP_S
-&kp LEFT_SHIFT  &none        &none       &none        &kp DELETE     &none             &none        &kp BACKSPACE  &none         &none        &none         &kp RIGHT_SHIFT
-                                         &trans       &trans         &trans            &trans       &trans         &trans
+&trans  &none  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &none         &kp DE_SLASH        &kp DE_LPAR           &kp DE_RPAR       &none  &kp DE_SHARP_S
+&trans  &none  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0       &kp DE_EQUAL  &kp DE_DOLLAR       &kp DE_PERCENT        &kp DE_AMPERSAND  &none  &none
+&trans  &none  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS    &none         &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION    &none  &trans
+                          &trans     &trans     &trans          &trans        &trans              &trans
             >;
         };
 
