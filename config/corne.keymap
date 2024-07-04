@@ -57,10 +57,10 @@
             */
 
             bindings = <
-&trans  &none  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &none         &kp DE_SLASH        &kp DE_LPAR           &kp DE_RPAR       &none  &kp DE_SHARP_S
-&trans  &none  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0       &kp DE_EQUAL  &kp DE_DOLLAR       &kp DE_PERCENT        &kp DE_AMPERSAND  &none  &none
-&trans  &none  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS    &none         &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION    &none  &trans
-                          &trans     &trans     &trans          &trans        &trans              &trans
+&trans  &none  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &none            &kp DE_SLASH        &kp DE_LPAR           &kp DE_RPAR       &none  &kp DE_SHARP_S
+&trans  &none  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0       &kp DE_EQUAL     &kp DE_DOLLAR       &kp DE_PERCENT        &kp DE_AMPERSAND  &none  &none
+&trans  &none  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS    &kp DE_QUESTION  &kp DE_EXCLAMATION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION    &none  &trans
+                          &trans     &trans     &trans          &trans           &trans              &trans
             >;
         };
 
@@ -78,10 +78,10 @@
                         */
 
             bindings = <
-&kp ESCAPE  &kp CARET     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp LT       &kp GT         &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none  &kp BSPC
-&kp TAB     &kp RA(DE_L)  &kp RA(DE_N5)            &kp RA(DE_N6)             &kp DE_PLUS  &kp DE_HASH    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
-&kp LSHFT   &none         &kp RA(DE_N8)            &kp RA(DE_N9)             &kp DELETE   &none          &none           &kp BACKSPACE   &none         &none            &none  &kp RIGHT_SHIFT
-                                                   &trans                    &trans       &trans         &trans          &trans          &trans
+&trans  &kp CARET     &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp LT       &kp GT         &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &none  &kp BSPC
+&trans  &kp RA(DE_L)  &kp RA(DE_N5)            &kp RA(DE_N6)             &kp DE_PLUS  &kp DE_HASH    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none  &none
+&trans  &none         &kp RA(DE_N8)            &kp RA(DE_N9)             &kp DELETE   &none          &none           &kp BACKSPACE   &none         &none            &none  &kp RIGHT_SHIFT
+                                               &trans                    &trans       &trans         &trans          &trans          &trans
             >;
         };
 
