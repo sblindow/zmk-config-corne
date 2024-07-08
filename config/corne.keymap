@@ -21,7 +21,7 @@
         ue_eszet: ue_eszet {
             compatible = "zmk,behavior-mod-morph";
             label = "UE_ESZET";
-            bindings = <&kp DE_U_UMLAUT>, <&kp DE_CAPITAL_SHARP_S>;
+            bindings = <&kp DE_U_UMLAUT>, <&kp DE_SHARP_S>;
 
             #binding-cells = <0>;
             mods = <(MOD_RGUI)>;
