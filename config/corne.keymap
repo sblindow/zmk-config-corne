@@ -66,7 +66,7 @@
             */
 
             bindings = <
-&trans  &none         &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &kp DE_AMPERSAND &kp DE_GRAVE  &kp DE_ACUTE          &kp DE_SECTION    &kp DE_DEGREE  &kp DE_SHARP_S
+&trans  &none         &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &kp DE_PERCENT   &kp DE_GRAVE  &kp DE_ACUTE          &kp DE_SECTION    &kp DE_DEGREE  &kp DE_SHARP_S
 &trans  &kp DE_EQUAL  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0       &kp DE_QUESTION  &kp DE_EXCL   &kp DE_DOUBLE_QUOTES  &kp DE_AMPERSAND  &kp RA(L)      &none
 &trans  &none         &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS    &kp BACKSPACE    &kp DELETE    &none                 &none             &none          &trans
                                  &trans     &trans     &trans          &trans           &trans        &trans
