@@ -28,6 +28,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        layer-3 {
+            bindings = <&mo 3>;
+            key-positions = <37 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -45,10 +54,10 @@
                         */
 
             bindings = <
-&kp ESC     &kp DE_Q  &kp DE_W  &kp DE_E  &kp DE_R      &kp DE_T       &kp DE_Z     &kp DE_U       &kp DE_I           &kp DE_O    &kp DE_P         &ue_eszet
-&kp TAB     &kp DE_A  &kp DE_S  &kp DE_D  &kp DE_F      &kp DE_G       &kp DE_H     &kp DE_J       &kp DE_K           &kp DE_L    &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&shiftcaps  &kp DE_Y  &kp DE_X  &kp DE_C  &kp DE_V      &kp DE_B       &kp DE_N     &kp DE_M       &kp DE_COMMA       &kp DE_DOT  &kp DE_MINUS     &kp RSHFT
-                                &mo 3     &kp LEFT_GUI  &lt 2 ENTER    &lt 1 SPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp ESC     &kp DE_Q        &kp DE_W        &kp DE_E       &kp DE_R       &kp DE_T      &kp DE_Z   &kp DE_U       &kp DE_I       &kp DE_O        &kp DE_P               &ue_eszet
+&kp TAB     &mt LSHFT DE_A  &mt LCTRL DE_S  &mt LALT DE_D  &mt LGUI DE_F  &kp DE_G      &kp DE_H   &mt RGUI DE_J  &mt RALT DE_K  &mt DE_L RCTRL  &mt RSHFT DE_O_UMLAUT  &kp DE_A_UMLAUT
+&shiftcaps  &kp DE_Y        &kp DE_X        &kp DE_C       &kp DE_V       &kp DE_B      &kp DE_N   &kp DE_M       &kp DE_COMMA   &kp DE_DOT      &kp DE_MINUS           &none
+                                            &kp BACKSPACE  &mo 1          &kp RETURN    &kp SPACE  &mo 2          &kp DELETE
             >;
         };
 
@@ -66,10 +75,10 @@
             */
 
             bindings = <
-&trans  &none         &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &kp DE_PERCENT   &kp DE_DOLLAR   &kp DE_SECTION   &kp DE_SINGLE_QUOTE  &kp DE_DEGREE  &kp DE_SHARP_S
-&trans  &kp DE_EQUAL  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0       &kp DE_EXCL      &kp DE_QUESTION &kp DE_AMPERSAND &kp DE_DOUBLE_QUOTES &kp RA(L)      &none
-&trans  &none         &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS    &kp BACKSPACE    &kp DELETE      &kp DE_ASTERISK  &kp DE_GRAVE         &kp DE_ACUTE   &trans
-                                 &trans     &trans     &trans          &trans           &trans          &trans
+&trans  &none         &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &kp DE_PERCENT  &kp DE_DOLLAR    &kp DE_SECTION    &kp DE_SINGLE_QUOTE   &kp DE_DEGREE  &kp DE_SHARP_S
+&trans  &kp DE_EQUAL  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0       &kp DE_EXCL     &kp DE_QUESTION  &kp DE_AMPERSAND  &kp DE_DOUBLE_QUOTES  &kp RA(L)      &none
+&trans  &none         &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS    &kp BACKSPACE   &kp DELETE       &kp DE_ASTERISK   &kp DE_GRAVE          &kp DE_ACUTE   &trans
+                                 &trans     &trans     &trans          &trans          &trans           &trans
             >;
         };
 
