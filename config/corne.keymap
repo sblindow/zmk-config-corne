@@ -21,8 +21,8 @@
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <-1>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -50,14 +50,18 @@
         next_window: next_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp DE_ACUTE>;
+            bindings = <&macro_press &kp LEFT_GUI>
+            <&macro_tap &kp DE_ACUTE>
+            <&macro_release &kp LEFT_GUI>;
             label = "NEXT_WINDOW";
         };
 
         spotlight: spotlight {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp SPACE>;
+            bindings = <&macro_press &kp LEFT_GUI>
+            <&macro_tap &kp SPACE>
+            <&macro_release &kp LEFT_GUI>;
             label = "SPOTLIGHT";
         };
     };
