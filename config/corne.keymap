@@ -37,6 +37,22 @@
         };
     };
 
+    macros {
+        next_window: next_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp DE_ACUTE>;
+            label = "NEXT_WINDOW";
+        };
+
+        spotlight: spotlight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp SPACE>;
+            label = "SPOTLIGHT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -54,10 +70,10 @@
                         */
 
             bindings = <
-&kp ESC  &kp DE_Q        &kp DE_W        &kp DE_E       &kp DE_R       &kp DE_T      &kp DE_Z   &kp DE_U       &kp DE_I       &kp DE_O        &kp DE_P               &ue_eszet
-&kp TAB  &mt LSHFT DE_A  &mt LCTRL DE_S  &mt LALT DE_D  &mt LGUI DE_F  &kp DE_G      &kp DE_H   &mt RGUI DE_J  &mt RALT DE_K  &mt DE_L RCTRL  &mt RSHFT DE_O_UMLAUT  &kp DE_A_UMLAUT
-&none    &kp DE_Y        &kp DE_X        &kp DE_C       &kp DE_V       &kp DE_B      &kp DE_N   &kp DE_M       &kp DE_COMMA   &kp DE_DOT      &kp DE_MINUS           &none
-                                         &kp BACKSPACE  &mo 1          &kp RETURN    &kp SPACE  &mo 2          &kp DELETE
+&kp ESC     &kp DE_Q        &kp DE_W        &kp DE_E       &kp DE_R       &kp DE_T      &kp DE_Z   &kp DE_U       &kp DE_I       &kp DE_O        &kp DE_P               &ue_eszet
+&kp TAB     &mt LSHFT DE_A  &mt LCTRL DE_S  &mt LALT DE_D  &mt LGUI DE_F  &kp DE_G      &kp DE_H   &mt RGUI DE_J  &mt RALT DE_K  &mt DE_L RCTRL  &mt RSHFT DE_O_UMLAUT  &kp DE_A_UMLAUT
+&spotlight  &kp DE_Y        &kp DE_X        &kp DE_C       &kp DE_V       &kp DE_B      &kp DE_N   &kp DE_M       &kp DE_COMMA   &kp DE_DOT      &kp DE_MINUS           &next_window
+                                            &kp BACKSPACE  &mo 1          &kp RETURN    &kp SPACE  &mo 2          &kp DELETE
             >;
         };
 
