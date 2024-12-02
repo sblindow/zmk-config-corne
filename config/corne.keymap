@@ -72,18 +72,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            /*
-┌───────┬───────┬───────┬───────┬───────┬───────┐   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│  ESC  │   Q   │   W   │   E   │   R   │   T   │   │   Z   │   U   │   I   │   O   │   P   │   Ü   │
-├───────┼───────┼───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│  TAB  │   A   │   S   │   D   │   F   │   G   │   │   H   │   J   │   K   │   L   │   Ö   │   Ä   │
-├───────┼───────┼───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│SH/CAPS│   Y   │   X   │   C   │   V   │   B   │   │   N   │   M   │   ,   │   .   │   -   │ SHIFT │
-└───────┴───────┴───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┴───────┴───────┘
-                        │  MO3  │ LGUI  │(2)ENT │   │(1)SPC │ RALT  │ RCTRL │
-                        └───────┴───────┴───────┘   └───────┴───────┴───────┘
-                        */
-
             bindings = <
 &kp ESC     &kp DE_Q        &kp DE_W        &kp DE_E       &kp DE_R       &kp DE_T      &kp DE_Z   &kp DE_U       &kp DE_I       &kp DE_O        &kp DE_P               &ue_eszet
 &kp TAB     &hm LSHFT DE_A  &hm LCTRL DE_S  &hm LALT DE_D  &hm LGUI DE_F  &kp DE_G      &kp DE_H   &hm RGUI DE_J  &hm RALT DE_K  &hm RCTRL DE_L  &hm RSHFT DE_O_UMLAUT  &kp DE_A_UMLAUT
@@ -93,18 +81,6 @@
         };
 
         numbers_and_navigation {
-            /*
-┌───────┬───────┬───────┬───────┬───────┬───────┐   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│ TRANS │       │   7   │   8   │   9   │   +   │   │   %   │   $   │   §   │   '   │   ˚   │   ß   │
-├───────┼───────┼───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ TRANS │   =   │   4   │   5   │   6   │   0   │   │   !   │   ?   │   &   │   "   │   @   │       │
-├───────┼───────┼───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ TRANS │       │   1   │   2   │   3   │   -   │   │  BSPC │  DEL  │   *   │   `   │   ´   │ TRANS │
-└───────┴───────┴───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┴───────┴───────┘
-                        │ TRANS │ TRANS │ TRANS │   │ TRANS │ TRANS │ TRANS │
-                        └───────┴───────┴───────┘   └───────┴───────┴───────┘
-            */
-
             bindings = <
 &trans  &none         &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none  &none
 &trans  &kp DE_EQUAL  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0       &kp LEFT_ARROW  &kp DOWN       &kp UP       &kp RIGHT  &none  &none
@@ -114,39 +90,15 @@
         };
 
         symbols {
-            /*
-┌───────┬───────┬───────┬───────┬───────┬───────┐   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│ TRANS │   ^   │   (   │   )   │   <   │   >   │   │ HOME  │ PG DN │ PG UP │  END  │       │       │
-├───────┼───────┼───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ TRANS │   |   │   [   │   ]   │   +   │   #   │   │  LEFT │ DOWN  │  UP   │ RIGHT │       │       │
-├───────┼───────┼───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│ TRANS │   '   │   {   │   }   │   /   │   \   │   │  BSPC │  DEL  │       │       │       │ TRANS │
-└───────┴───────┴───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┴───────┴───────┘
-                        │ TRANS │ TRANS │ TRANS │   │ RGUI  │ TRANS │ TRANS │
-                        └───────┴───────┴───────┘   └───────┴───────┴───────┘
-                        */
-
             bindings = <
 &trans  &kp DE_CARET  &kp DE_DOLLAR        &kp RA(DE_L)    &kp DE_LT     &kp DE_LEFT_PARENTHESIS    &kp DE_RIGHT_PARENTHESIS  &kp DE_GREATER_THAN  &kp DE_EXCLAMATION  &kp DE_EURO           &kp DE_DEGREE   &none
 &trans  &kp DE_PIPE   &kp DE_SINGLE_QUOTE  &kp DE_STAR     &kp DE_PLUS   &kp DE_LEFT_BRACKET        &kp DE_RIGHT_BRACKET      &kp DE_MINUS         &kp DE_QUESTION     &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &none
-&trans  &none         &kp DE_GRAVE         &kp DE_PERCENT  &kp DE_SLASH  &kp DE_LEFT_BRACE          &kp DE_RIGHT_BRACE        &kp DE_BACKSLASH     &kp DE_AMPERSAND    &kp DE_ACUTE          &none           &trans
+&trans  &kp DE_HASH     &kp DE_GRAVE         &kp DE_PERCENT  &kp DE_SLASH  &kp DE_LEFT_BRACE          &kp DE_RIGHT_BRACE        &kp DE_BACKSLASH     &kp DE_AMPERSAND    &kp DE_ACUTE          &none           &trans
                                            &trans          &trans        &none                      &none                     &trans               &trans
             >;
         };
 
         Function-BT-OS {
-            /*
-┌───────┬───────┬───────┬───────┬───────┬───────┐   ┌───────┬───────┬───────┬───────┬───────┬───────┐
-│  F1   │  F2   │  F3   │  F4   │  F5   │  F6   │   │BT_CLR │ BT_0  │ BT_1  │ BT_2  │ BT_3  │       │
-├───────┼───────┼───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│  F7   │  F8   │  F9   │  F10  │  F11  │  F12  │   │BRI_UP │BRI_DN │VOL_UP │VOL_DN │ MUTE  │       │
-├───────┼───────┼───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┼───────┼───────┤
-│  F13  │  F14  │  F15  │  F16  │  F17  │  F18  │   │       │       │       │       │       │       │
-└───────┴───────┴───────┼───────┼───────┼───────┤   ├───────┼───────┼───────┼───────┴───────┴───────┘
-                        │ TRANS │ TRANS │ TRANS │   │ TRANS │ TRANS │ TRANS │
-                        └───────┴───────┴───────┘   └───────┴───────┴───────┘
-                        */
-
             bindings = <
 &bt BT_CLR      &none  &kp F7  &kp F8  &kp F9  &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp F16  &kp F17  &kp F18  &none  &bt BT_SEL 0
 &bt BT_CLR_ALL  &none  &kp F4  &kp F5  &kp F6  &kp C_SLEEP          &kp C_MUTE       &kp F13  &kp F14  &kp F15  &none  &bt BT_SEL 1
