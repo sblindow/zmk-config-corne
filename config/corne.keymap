@@ -73,10 +73,10 @@
 
         default_layer {
             bindings = <
-&kp ESC     &kp DE_Q        &kp DE_W        &kp DE_E       &kp DE_R       &kp DE_T      &kp DE_Z   &kp DE_U       &kp DE_I       &kp DE_O        &kp DE_P               &ue_eszet
-&kp TAB     &hm LSHFT DE_A  &hm LCTRL DE_S  &hm LALT DE_D  &hm LGUI DE_F  &kp DE_G      &kp DE_H   &hm RGUI DE_J  &hm RALT DE_K  &hm RCTRL DE_L  &hm RSHFT DE_O_UMLAUT  &kp DE_A_UMLAUT
-&spotlight  &kp DE_Y        &kp DE_X        &kp DE_C       &kp DE_V       &kp DE_B      &kp DE_N   &kp DE_M       &kp DE_COMMA   &kp DE_DOT      &kp DE_MINUS           &next_window
-                                            &kp DELETE     &mo 1          &kp RETURN    &kp SPACE  &mo 2          &kp BACKSPACE
+&kp ESC     &kp DE_Q  &kp DE_W    &kp DE_E       &kp DE_R       &kp DE_T      &kp DE_Z     &kp DE_U       &kp DE_I       &kp DE_O        &kp DE_P               &ue_eszet
+&kp TAB     &kp DE_A  &kp DE_S    &kp DE_D  &hm LGUI DE_F  &kp DE_G      &kp DE_H     &hm RGUI DE_J  &hm RALT DE_K  &hm RCTRL DE_L  &hm RSHFT DE_O_UMLAUT  &kp DE_A_UMLAUT
+&kp LSHFT   &kp DE_Y  &kp DE_X    &kp DE_C       &kp DE_V       &kp DE_B      &kp DE_N     &kp DE_M       &kp DE_COMMA   &kp DE_DOT      &kp DE_MINUS           &kp RSHFT
+                      &kp DELETE  &mo 1          &lt 1 ENTER   &lt 2 SPACE  &mo 2          &kp BACKSPACE
             >;
         };
 
