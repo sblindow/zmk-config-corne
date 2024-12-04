@@ -84,7 +84,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+default_layer {
             bindings = <
 &kp ESC    &kp DE_Q  &kp DE_W  &kp DE_E      &kp DE_R  &kp DE_T       &kp DE_Z     &kp DE_U  &kp DE_I           &kp DE_O    &kp DE_P         &kp DE_U_UMLAUT
 &kp TAB    &kp DE_A  &kp DE_S  &kp DE_D      &kp DE_F  &kp DE_G       &kp DE_H     &kp DE_J  &kp DE_K           &kp DE_L    &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
@@ -95,19 +95,19 @@
 
         numbers_and_navigation {
             bindings = <
-&trans  &none         &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none  &none
-&trans  &kp DE_EQUAL  &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0       &kp LEFT_ARROW  &kp DOWN       &kp UP       &kp RIGHT  &none  &none
-&trans  &none         &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS    &none           &none          &none        &none      &none  &trans
-                                 &trans     &trans     &trans          &trans          &trans         &trans
+&trans  &kp DE_ASTERISK  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_PLUS     &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &none  &none
+&trans  &kp DE_EQUAL     &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_N0       &kp LEFT_ARROW  &kp DOWN       &kp UP       &kp RIGHT  &none  &none
+&trans  &kp DE_PERCENT   &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_MINUS    &none           &none          &none        &none      &none  &trans
+                                    &trans     &trans     &trans          &trans          &trans         &trans
             >;
         };
 
         symbols {
             bindings = <
-&trans  &kp DE_CARET  &kp DE_DOLLAR        &kp RA(DE_L)    &kp DE_LT     &kp DE_LEFT_PARENTHESIS    &kp DE_RIGHT_PARENTHESIS  &kp DE_GREATER_THAN  &kp DE_EXCLAMATION  &kp DE_EURO           &kp DE_DEGREE   &kp DE_SZ
-&trans  &kp DE_PIPE   &kp DE_SINGLE_QUOTE  &kp DE_STAR     &kp DE_PLUS   &kp DE_LEFT_BRACKET        &kp DE_RIGHT_BRACKET      &kp DE_MINUS         &kp DE_QUESTION     &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &none
-&trans  &kp DE_HASH   &kp DE_GRAVE         &kp DE_PERCENT  &kp DE_SLASH  &kp DE_LEFT_BRACE          &kp DE_RIGHT_BRACE        &kp DE_BACKSLASH     &kp DE_AMPERSAND    &kp DE_ACUTE          &none           &trans
-                                           &trans          &trans        &none                      &none                     &trans               &trans
+&trans    &none        &kp DE_DOLLAR        &kp RA(DE_L)        &kp DE_LT     &kp DE_LEFT_PARENTHESIS    &kp DE_RIGHT_PARENTHESIS  &kp DE_GREATER_THAN  &kp DE_CARET     &kp DE_EURO           &kp DE_DEGREE   &kp DE_SZ
+&trans    &kp DE_PIPE  &kp DE_SINGLE_QUOTE  &kp DE_EXCLAMATION  &kp DE_SLASH  &kp DE_LEFT_BRACKET        &kp DE_RIGHT_BRACKET      &kp DE_BACKSLASH     &kp DE_QUESTION  &kp DE_DOUBLE_QUOTES  &kp DE_SECTION  &none
+&kp CAPS  &none        &kp DE_GRAVE         &kp DE_DOLLAR       &kp DE_HASH   &kp DE_LEFT_BRACE          &kp DE_RIGHT_BRACE        &kp BACKSPACE        &kp DELETE       &kp DE_ACUTE          &none           &kp CAPS
+                                            &trans              &trans        &none                      &none                     &trans               &trans
             >;
         };
 
@@ -117,15 +117,6 @@
 &bt BT_CLR_ALL  &none  &kp F4  &kp F5  &kp F6  &kp C_SLEEP          &kp C_MUTE       &kp F13  &kp F14  &kp F15  &none  &bt BT_SEL 1
 &none           &none  &kp F1  &kp F2  &kp F3  &kp C_BRI_DN         &kp C_BRI_UP     &kp F10  &kp F11  &kp F12  &none  &bt BT_SEL 2
                                &trans  &trans  &trans               &trans           &trans   &trans
-            >;
-        };
-
-        right-side-util {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp BACKSPACE  &kp DELETE  &trans  &kp CAPSLOCK
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
